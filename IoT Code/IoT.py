@@ -2,7 +2,7 @@ import requests
 import time
 import random
 
-API_URL = "http://localhost:5000/api/temperature"
+API_URL = "http://localhost:5001/api/temperature"
 
 def send_temperature():
     # Simulate temperature reading (15°C to 45°C)

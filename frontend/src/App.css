@@ -8,9 +8,10 @@ body {
 .dashboard {
   display: grid;
   grid-template-columns: 220px 1fr 250px;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 60px auto 1fr;
   grid-template-areas:
     "sidebar topbar topbar"
+    "sidebar alert alert"
     "sidebar map panel";
   height: 100vh;
 }
