@@ -40,6 +40,8 @@ DASHBOARD_HTML = """
             justify-content: center;
             align-items: center;
             border-right: 2px solid #333;
+            display: flex;
+            margin-top: 70px;
         }
 
         .sensor-info {
@@ -90,6 +92,35 @@ DASHBOARD_HTML = """
             width: 65%;
             height: 100%;
         }
+        /* TOP BAR */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;             /* thin bar */
+            background-color: #0d0d0d;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 2px solid #222;
+            z-index: 1000;
+        }
+
+        .top-logo {
+            height: 55px;             /* fits inside bar */
+            width: auto;
+            object-fit: contain;
+            margin-right: 15px;
+        }
+
+        .top-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff00;
+        }
+
+
 
     </style>
 
@@ -98,6 +129,11 @@ DASHBOARD_HTML = """
 </head>
 
 <body>
+
+<div class="top-bar">
+    <img src="/static/prologo.png" class="top-logo">
+    <span class="top-title">Project GreenGuard</span>
+</div>
 
     <!-- LEFT INFO PANEL -->
     <div class="info-panel">
